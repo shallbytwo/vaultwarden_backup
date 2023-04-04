@@ -24,7 +24,7 @@ mkdir -p $backup_dir && \
 #复制vaultwarden数据到备份目录
 cp -a $vw_dir/* $backup_dir && \
 #删除掉不需要备份的文件
-rm -rf $backup_dir/$sql_dirname/db.sqlite3 $backup_dir/$sql_dirname/db.sqlite3-wal && \
+rm -rf $backup_dir/$sql_dirname/db.sqlite3* && \
 #使用sqlite3标准备份命令备份sqlite数据
 sqlite3 $sql_dir/db.sqlite3 ".backup '$backup_dir/$sql_dirname/db-$(date '+%Y%m%d%H%M').sqlite3'" && \
 #压缩备份的文件，并且压缩后删除备份文件夹中的源文件
