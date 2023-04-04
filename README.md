@@ -1,5 +1,4 @@
-# vaultwarden_backup
-vaultwarden backup shell file
+# vaultwarden_backup file｜vaultwarden备份脚本
 
 debian11测试通过
 
