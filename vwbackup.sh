@@ -14,7 +14,7 @@ sql_dir="/dockerprojects/vaultwarden/vw-data"
 #vaultwarden数据文件夹名字
 sql_dirname="vw-data"
 #需要备份到的位置
-backup_dir="/tmp/backup/vaultwarden"
+backup_dir="/usr/tmp/backup/vaultwarden"
 #压缩密码设置
 zip_pwd=123456
 
